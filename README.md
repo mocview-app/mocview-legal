@@ -1,4 +1,4 @@
-# MOCVIEW Legal Documents - GitHub Pages Site
+# MOCVIEW Legal Documents
 
 **Domain:** https://legal.mocview.com  
 **Repository:** https://github.com/mocview-app/mocview-legal  
