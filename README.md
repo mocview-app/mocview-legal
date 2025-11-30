@@ -22,21 +22,18 @@ These are your primary URLs:
 
 ```
 mocview-legal/
-├── CNAME                        # Custom domain configuration
-├── README.md                    # This file
-├── index.html                   # Home page (gradient design)
+├── index.html                   # Home page
 │
 ├── privacy/
 │   └── index.html              # Privacy Policy
 │
 ├── terms/
-│   └── index.html              # Terms of Service (to be created)
+│   └── index.html              # Terms of Service
 │
 └── assets/
     ├── css/
-    │   └── style.css           # Gradient styling
-    └── images/
-        └── (future logo files)
+    │   └── style.css           # Site styling
+    
 ```
 
 ---
