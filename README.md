@@ -6,7 +6,7 @@
 
 ---
 
-## ✅ Success Checklist
+## ✅ Success
 
 Please verify these URLs work:
 
