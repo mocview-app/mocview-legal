@@ -1,0 +1,506 @@
+/* ============================================================================
+   MOCVIEW Legal Site - Stylesheet
+   Gradient Aesthetic Matching Main Site
+   ============================================================================ */
+
+/* ============================================================================
+   CSS RESET & BASE STYLES
+   ============================================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================================
+   GRADIENT BACKGROUND (Matching Main Site)
+   ============================================================================ */
+
+.gradient-background {
+    min-height: 100vh;
+    background: linear-gradient(135deg, 
+        #D32F2F 0%,      /* Red (brand color) */
+        #FF6B35 25%,     /* Orange */
+        #FFB347 50%,     /* Yellow-orange */
+        #FF1493 100%     /* Pink */
+    );
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+/* ============================================================================
+   CONTAINER & LAYOUT
+   ============================================================================ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* ============================================================================
+   LOGO SECTION
+   ============================================================================ */
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 0.3em;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-bold {
+    font-weight: 800;
+    letter-spacing: 0.2em;
+}
+
+.logo-light {
+    font-weight: 200;
+    letter-spacing: 0.15em;
+}
+
+.tagline {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* ============================================================================
+   CONTENT SECTION
+   ============================================================================ */
+
+.content-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    animation: fadeIn 1s ease-out 0.2s both;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    animation: fadeIn 1s ease-out 0.4s both;
+}
+
+/* ============================================================================
+   DOCUMENT CARDS
+   ============================================================================ */
+
+.document-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.document-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-decoration: none;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.document-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #D32F2F, #FF6B35);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #1a1a1a;
+}
+
+.card-description {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.card-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #D32F2F;
+    transition: color 0.3s ease;
+}
+
+.document-card:hover .card-link {
+    color: #FF6B35;
+}
+
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
+
+.footer {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-out 0.8s both;
+}
+
+.footer-content {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-address,
+.footer-contact,
+.footer-copyright {
+    font-size: 0.95rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ============================================================================
+   LEGAL DOCUMENT PAGE STYLES
+   ============================================================================ */
+
+.legal-document {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    color: #2c3e50;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.legal-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.legal-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.legal-meta {
+    font-size: 0.95rem;
+    color: #666666;
+    font-weight: 300;
+}
+
+.legal-content {
+    line-height: 1.8;
+}
+
+.legal-content h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.legal-content h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.legal-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.legal-content p {
+    margin-bottom: 1.25rem;
+    color: #2c3e50;
+}
+
+.legal-content ul,
+.legal-content ol {
+    margin-left: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.legal-content li {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.legal-content strong {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.legal-content a {
+    color: #D32F2F;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.legal-content a:hover {
+    border-bottom-color: #D32F2F;
+}
+
+.legal-content hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 2rem 0;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #D32F2F, #FF6B35);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(211, 47, 47, 0.3);
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4);
+}
+
+.print-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: #ffffff;
+    color: #D32F2F;
+    text-decoration: none;
+    border: 2px solid #D32F2F;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background: #D32F2F;
+    color: #ffffff;
+}
+
+/* ============================================================================
+   ANIMATIONS
+   ============================================================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================ */
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .document-links {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .legal-document {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+
+    .legal-title {
+        font-size: 2rem;
+    }
+
+    .legal-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .legal-content h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gradient-background {
+        padding: 1rem 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .document-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .legal-document {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* ============================================================================
+   PRINT STYLES
+   ============================================================================ */
+
+@media print {
+    .gradient-background {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+
+    .back-button,
+    .print-button,
+    .footer {
+        display: none !important;
+    }
+
+    .legal-document {
+        box-shadow: none !important;
+        background: #ffffff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .legal-content {
+        color: #000000 !important;
+    }
+
+    .legal-content h2,
+    .legal-content h3,
+    .legal-content h4,
+    .legal-content p,
+    .legal-content li {
+        color: #000000 !important;
+    }
+
+    a {
+        color: #000000 !important;
+        text-decoration: underline !important;
+    }
+}
