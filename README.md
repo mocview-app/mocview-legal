@@ -8,14 +8,13 @@
 
 ## ✅ Approved for Posting
 
-Please verify these URLs work:
+These are your primary URLs:
 
-- [ ] https://legal.mocview.com (Home page with gradient)
+- [ ] https://legal.mocview.com (Home page)
 - [ ] https://legal.mocview.com/privacy (Privacy Policy)
 - [ ] https://legal.mocview.com/terms (Terms of Service)
 - [ ] Green padlock 🔒 on all pages (HTTPS enabled)
-- [ ] Mobile responsive (test on phone)
-- [ ] Print functionality works
+- [ ] Mobile responsive Version (for mobile)
 
 ---
 
